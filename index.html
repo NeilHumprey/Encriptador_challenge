@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./img/unnamed-removebg-preview.png" alt="logo-alura">
+            <div class="encriptador">
+                <p class="encriptador__titulo">Encriptador</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="containerBotones" class="ingreso__texto" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+                <p class="spam">Solo letras minúsculas y sin acentos</p>
+                <div class="container__botones">
+                    <button onclick="clickEncriptar();" id="botonEncriptar" class="boton__encriptar boton" >Encriptar</button>
+                    <button onclick="clickDesencriptar();" id="botonDesencriptar" class="boton__desencriptar boton" >Desencriptar</button>
+                </div>
+            </div>
+            <div id="rightContent" class="right">
+                <textarea id="textRight" class="text__right" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <div class="container__copiar">
+                    <button onclick="clickCopiar();" id="copiarID" class="ocultar boton__copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <video class="video__background" muted autoplay loop src="./img/video.mp4"></video>
+        <!-- <div class="gif__encriptando"></div> -->
+        
+    </main>
+    <footer class="box__footer">
+        <p class="footer__text">Desarrollado por Neil Zavalla</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
