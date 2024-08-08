@@ -14,7 +14,7 @@ function limpiarPlaceholder(texto) {
 }
 
 function textoEntradaUsuario() {
-    let textoUsuario = document.getElementById("containerBotones").value.toLowerCase();
+    let textoUsuario = document.getElementById("containerBotones").value;
     textoEntrada = textoUsuario;
 } 
 
@@ -79,7 +79,7 @@ function clickEncriptar() {
 
     if (!/^[a-z\s]+$/.test(textoEntrada)) {                             //Evalúa el texto introducido
         return;
-    }
+    } else {}
 
     if (textoEntrada != "") {
         
